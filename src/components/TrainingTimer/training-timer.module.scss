@@ -1,0 +1,48 @@
+.section {
+  width: 400px;
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.exercise {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: flex;
+  width: 60px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: gray;
+  }
+}
+
+.timer {
+    @extend .exercise
+}
+
+.time {
+    font-size: 20px;
+    font-weight: 700;
+}

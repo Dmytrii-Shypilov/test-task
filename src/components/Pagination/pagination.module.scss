@@ -1,0 +1,49 @@
+.pagination {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.pageBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  font-weight: 700;
+  color: gray;
+  border-right: 1px solid gray;
+  &:not(:last-of-type) {
+    border-right: 1px solid gray;
+  }
+  &:first-of-type {
+    border-left: 1px solid gray;
+  }
+  cursor: pointer;
+}
+
+.active {
+  @extend .pageBtn;
+  position: relative;
+  color: red;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 15px;
+    height: 2px;
+    background-color: red;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

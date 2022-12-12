@@ -1,0 +1,94 @@
+.list {
+  list-style: none;
+}
+
+.listItem {
+  position: relative;
+  display: flex;
+  width: 1400px;
+  height: 164px;
+  background-color: var(--bgColorLight);
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 24px 16px;
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+
+.img {
+  display: block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.thumb {
+  margin-right: 25px;
+}
+
+.textBlock {
+  width: 960px;
+  margin-right: 32px;
+}
+
+.nameBlock {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--secondaryTxtColor);
+  margin-bottom: 8px;
+}
+
+.nameTag {
+  margin-right: 5px;
+}
+
+.titleText {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--primaryTxtColor);
+  margin-bottom: 8px;
+}
+
+.address {
+  @extend .nameBlock;
+  display: flex;
+  align-items: center;
+}
+
+.locIcon {
+  margin-right: 8px;
+}
+
+.stars {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.starIcon {
+  &:hover {
+    fill: red;
+  }
+}
+
+.flagIcon {
+  position: absolute;
+  top: 29px;
+  right: 24px;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--secondaryTxtColor);
+}
